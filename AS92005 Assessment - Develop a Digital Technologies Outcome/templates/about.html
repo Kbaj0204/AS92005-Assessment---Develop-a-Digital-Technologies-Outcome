@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='stylesheet.css') }}" rel="stylesheet">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% include 'carousel.html' %}
+
+    <div class="container mt-5">
+        <h1>About the Pepeha Creator</h1>
+        <p>The Pepeha Creator is a web application designed to help individuals create their own pepeha, a way of introducing oneself in Māori culture. A pepeha typically includes references to one's ancestral connections to landmarks, such as mountains, rivers, and tribal affiliations.</p>
+        <p>This tool allows users to input their details and generate a personalized pepeha that can be shared or printed. It is designed with simplicity and cultural sensitivity in mind.</p>
+
+        <p>
+            This website is designed to cater to all users, both Māori and non-Māori, who wish to create and share their pepeha. 
+            We prioritize accessibility, ease of use, and cultural sensitivity, ensuring that users of all backgrounds can engage 
+            with the process of creating their pepeha. The website follows essential UX principles, including intuitive navigation, 
+            clear guidance, consistent design, and inclusive language, making it a user-friendly platform for everyone.
+        </p>
+        <p>
+            If you have any questions or feedback, feel free to reach out to us. We appreciate your input to make this platform better.
+        </p>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=kabbajaj@student.pakuranga.school.nz&tf=cm" class="btn btn-dark mt-3">Email Me</a>
+        <a href="https://www.instagram.com/kabirb__" class="btn btn-dark mt-3">Instagram</a>
+        <p></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

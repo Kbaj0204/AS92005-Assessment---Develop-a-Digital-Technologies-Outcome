@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='stylesheet.css') }}" rel="stylesheet">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% include 'carousel.html' %}
+    <div class="container mt-5">
+        <h1>Welcome to the Pepeha Creator</h1>
+        <a href="/make" class="btn btn-dark mt-3">Click Here to Make Your Pepeha!</a>
+        <p></p>
+        <p></p>
+        <p>
+            A pepeha is a traditional Māori introduction that establishes identity by referring to the ancestral landmarks, 
+            iwi (tribe), hapū (sub-tribe), and personal connections to the land. It's a way of introducing oneself in a manner 
+            that connects to your place in the world. Historically, pepeha has been a significant part of Māori culture, 
+            serving not only as an introduction but also as a reminder of one's whakapapa (genealogy) and tūrangawaewae (place of standing).
+        </p>
+        <p>
+            In Māori culture, a pepeha is more than just a way to introduce yourself; it is a connection to the land, the mountains, 
+            the rivers, and the ancestors who have come before. It is a reflection of identity and belonging, reinforcing the deep 
+            relationship between people and their environment. Understanding and sharing pepeha is crucial to preserving and 
+            passing on cultural knowledge and values.
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

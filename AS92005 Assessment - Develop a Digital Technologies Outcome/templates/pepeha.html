@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Pepeha</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="{{ url_for('static', filename='stylesheet.css') }}" rel="stylesheet">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% include 'carousel.html' %}
+
+    <div class="container mt-5 text-center">
+        <h1>Your Pepeha</h1>
+
+        {% if pepeha.name %}
+            <p><strong>Name/Ingoa:</strong> {{ pepeha.name }}</p>
+        {% endif %}
+        
+        {% if pepeha.mountain %}
+            <p><strong>Mountain/Maunga:</strong> {{ pepeha.mountain }}</p>
+        {% endif %}
+        
+        {% if pepeha.river %}
+            <p><strong>River/Awa:</strong> {{ pepeha.river }}</p>
+        {% endif %}
+        
+        {% if pepeha.sea %}
+            <p><strong>Sea/Moana:</strong> {{ pepeha.sea }}</p>
+        {% endif %}
+        
+        {% if pepeha.tribe %}
+            <p><strong>Tribe/Iwi:</strong> {{ pepeha.tribe }}</p>
+        {% endif %}
+        
+        {% if pepeha.sub_tribe %}
+            <p><strong>Sub-Tribe/Hapū:</strong> {{ pepeha.sub_tribe }}</p>
+        {% endif %}
+        
+        {% if pepeha.meeting_ground %}
+            <p><strong>Meeting Ground/Marae:</strong> {{ pepeha.meeting_ground }}</p>
+        {% endif %}
+        
+        {% if pepeha.meeting_house %}
+            <p><strong>Meeting House/Wharenui:</strong> {{ pepeha.meeting_house }}</p>
+        {% endif %}
+        
+        {% if pepeha.ancestor %}
+            <p><strong>Ancestor/Tūpuna:</strong> {{ pepeha.ancestor }}</p>
+        {% endif %}
+        
+        {% if pepeha.family %}
+            <p><strong>Family/Whānau:</strong> {{ pepeha.family }}</p>
+        {% endif %}
+        
+        <a href="/make" class="btn btn-dark mt-4">Create Another Pepeha</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
